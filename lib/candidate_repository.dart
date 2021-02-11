@@ -11,7 +11,7 @@ class CandidateRepository {
     final String wsUrl = 'ws://192.168.100.3:7545';
     //final File abiFile = File('assets/Election.abi');
     final EthereumAddress contractAddr =
-        EthereumAddress.fromHex('0xd7aac401004aE52F52C804C17202d79dd198D43e');
+        EthereumAddress.fromHex('0xECaAA3fF88099Ac685942d31D2818CCaA3f8f85a');
     final client = Web3Client(rpcUrl, http.Client(), socketConnector: () {
       return IOWebSocketChannel.connect(wsUrl).cast<String>();
     });
